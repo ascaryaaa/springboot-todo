@@ -24,8 +24,13 @@ public class Todo {
     @GeneratedValue
     @Column(updatable = false, nullable = false)
     Long id;
+
+    @Column
+    String title;
+
     @Column
     String description;
+
     @Column
     TodoStatus todoStatus;
 
